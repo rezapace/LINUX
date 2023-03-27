@@ -357,4 +357,25 @@ Hal ini diperlukan karena plugin validasi password pada MySQL dapat menyebabkan 
 ```
 
 2. klick space (buat milih) arrow key, trus klick yes (spasi) masukan pasword p
+
+## Langkah 3: run,status,stop,restart
+
+### perintah untuk apache
+
+```bash
+    sudo service apache2 start
+    sudo service apache2 stop
+    sudo service apache2 status
+    sudo service apache2 restart
+```
+
+### perintah untuk mysql
+
+```bash
+    sudo service mysql start
+    sudo service mysql stop
+    sudo service mysql status
+    sudo service mysql restart
+```
+
 </details>
