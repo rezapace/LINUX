@@ -63,3 +63,53 @@ Ini adalah skrip bash yang dapat membantu pengguna Linux untuk mengatur prompt, 
 9. Ikuti instruksi pada layar untuk mengkonfigurasi prompt dan instalasi berbagai alat.
 
 Selamat mencoba!
+
+<details>
+# Instalasi Golang
+
+Berikut adalah langkah-langkah instalasi Golang pada sistem operasi Linux:
+
+1. Unduh file instalasi Golang dari situs resmi https://golang.org/dl/
+
+```
+wget https://dl.google.com/go/go1.20.2.linux-amd64.tar.gz
+```
+
+2. Ekstrak file instalasi yang sudah diunduh
+
+```
+sudo tar -xvf go1.20.2.linux-amd64.tar.gz
+```
+
+3. Pindahkan direktori Golang ke direktori /usr/local
+
+```
+sudo mv go /usr/local
+```
+
+4. Tambahkan variabel lingkungan Golang pada file .bashrc
+
+```
+sudo nano ~/.bashrc
+```
+
+Kemudian tambahkan baris berikut pada akhir file:
+
+```
+# Go Global variables
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+```
+
+5. Simpan perubahan pada file .bashrc dengan menekan tombol Ctrl + o, kemudian tekan enter. Keluar dari editor nano dengan menekan tombol Ctrl + x.
+
+6. Muat ulang file .bashrc agar perubahan dapat diterapkan
+
+```
+source ~/.bashrc
+```
+
+Setelah melakukan langkah-langkah di atas, Golang sudah berhasil diinstal pada sistem operasi Linux yang digunakan.
+
+</details>
