@@ -65,7 +65,7 @@ Ini adalah skrip bash yang dapat membantu pengguna Linux untuk mengatur prompt, 
 Selamat mencoba!
 
 <details>
-# Instalasi Golang
+<summary>Instalasi Golang</summary>
 
 Berikut adalah langkah-langkah instalasi Golang pada sistem operasi Linux:
 
