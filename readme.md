@@ -71,7 +71,7 @@ Selamat mencoba!
 # Golang
 
 <details>
-<summary>Instalasi Golang</summary>
+<summary>Instalasi</summary>
 
 Berikut adalah langkah-langkah instalasi Golang pada sistem operasi Linux:
 
