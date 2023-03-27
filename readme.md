@@ -264,9 +264,9 @@ Pertama-tama, buka terminal dan jalankan perintah berikut untuk menginstal Apach
 
 ### menginstall apache2
 
-    ```bash
-    sudo apt-get install apache2
-    ```
+```bash
+sudo apt-get install apache2
+```
 
 ### menginstall libapache2
 
