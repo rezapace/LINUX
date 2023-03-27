@@ -358,7 +358,7 @@ Hal ini diperlukan karena plugin validasi password pada MySQL dapat menyebabkan 
 
 2. klick space (buat milih) arrow key, trus klick yes (spasi) masukan pasword p
 
-## Langkah 3: run,status,stop,restart
+## Langkah : run,status,stop,restart
 
 ### perintah untuk apache
 
