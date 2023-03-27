@@ -254,6 +254,8 @@ WSLG memungkinkan pengguna Windows 10 untuk menjalankan aplikasi GUI Linux tanpa
 
 # Tutorial Instalasi Apache, PHP, MySQL, dan phpMyAdmin pada Ubuntu
 
+<details>
+<summary>Instalasi</summary>
 Tutorial ini akan memberikan panduan instalasi Apache, PHP, MySQL, dan phpMyAdmin pada sistem operasi Ubuntu.
 
 ## Langkah 1: Instalasi Apache
@@ -354,3 +356,4 @@ Hal ini diperlukan karena plugin validasi password pada MySQL dapat menyebabkan 
 ```
 
 2. klick space (buat milih) arrow key, trus klick yes (spasi) masukan pasword p
+</details>
