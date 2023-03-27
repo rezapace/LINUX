@@ -252,7 +252,7 @@ WSLG memungkinkan pengguna Windows 10 untuk menjalankan aplikasi GUI Linux tanpa
 
 </details>
 
-# Tutorial Instalasi Apache, PHP, MySQL, dan phpMyAdmin pada Ubuntu
+# Apache, PHP, MySQL, phpMyAdmin
 
 <details>
 <summary>Instalasi</summary>
