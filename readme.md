@@ -37,8 +37,7 @@ Ini adalah skrip bash yang dapat membantu pengguna Linux untuk mengatur prompt, 
 5. Masuk ke direktori `github` dan clone repository `mybash` dengan perintah:
 
    ```
-   cd ~/github
-   git clone https://github.com/christitustech/mybash
+   cd ~/github git clone https://github.com/christitustech/mybash
    ```
 
 6. Masuk ke direktori `mybash` dan beri izin eksekusi pada file `setup.sh` dengan perintah:
