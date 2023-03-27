@@ -68,7 +68,7 @@ Selamat mencoba!
 
 </details>
 
-#Golang
+# Golang
 
 <details>
 <summary>Instalasi Golang</summary>
