@@ -1,25 +1,66 @@
-Ini adalah script bash yang dapat digunakan untuk mengatur lingkungan kerja pada terminal di Linux. Berikut adalah langkah-langkahnya:
+# My Bash
 
-1. Pertama, jalankan perintah "sudo apt update && sudo apt upgrade -y" untuk memperbarui dan mengupgrade sistem Linux kamu.
+Ini adalah skrip bash yang dapat membantu pengguna Linux untuk mengatur prompt, konfigurasi, dan instalasi berbagai alat. Skrip ini menggunakan Starship, yang merupakan prompt yang sangat kustomisasi dan dapat diatur sesuai dengan keinginan pengguna.
 
-2. Buat direktori baru dengan perintah "mkdir ~/.config" untuk menyimpan file konfigurasi.
+## Persyaratan
 
-3. Buat file baru untuk konfigurasi Starship dengan perintah "touch ~/.config/starship.toml".
+- Linux (Debian/Ubuntu) / wsl Ubuntu 20.04.5 LTS
+- Koneksi internet
 
-4. Buat direktori baru dengan perintah "mkdir github" untuk menyimpan file dari GitHub.
+## Cara Penggunaan
 
-5. Hapus file bashrc yang lama dengan perintah "rm ~/.bashrc".
+1. Buka terminal dan jalankan perintah berikut untuk memperbarui sistem:
 
-6. Pindah ke direktori "github" dengan perintah "cd github".
+   ```
+   sudo apt update && sudo apt upgrade -y
+   ```
 
-7. Clone repository "mybash" dari GitHub dengan perintah "git clone https://github.com/christitustech/mybash".
+2. Buat direktori `.config` dan file `starship.toml` dengan perintah:
 
-8. Pindah ke direktori "mybash" dengan perintah "cd mybash".
+   ```
+   mkdir ~/.config
+   touch ~/.config/starship.toml
+   ```
 
-9. Ubah izin file "setup.sh" dengan perintah "chmod 775 setup.sh".
+3. Buat direktori `github` di direktori home dengan perintah:
 
-10. Ubah izin file "starship.toml" dengan perintah "chmod 664 starship.toml".
+   ```
+   mkdir ~/github
+   ```
 
-11. Jalankan script "setup.sh" dengan perintah "./setup.sh".
+4. Hapus file `.bashrc` dengan perintah:
 
-Dengan menjalankan script bash ini, kamu dapat mengatur lingkungan kerja pada terminal sesuai dengan preferensi kamu. Selamat mencoba!
+   ```
+   rm ~/.bashrc
+   ```
+
+5. Masuk ke direktori `github` dan clone repository `mybash` dengan perintah:
+
+   ```
+   cd ~/github
+   git clone https://github.com/christitustech/mybash
+   ```
+
+6. Masuk ke direktori `mybash` dan beri izin eksekusi pada file `setup.sh` dengan perintah:
+
+   ```
+   cd mybash
+   chmod 775 setup.sh
+   ```
+
+7. Salin file `starship.toml` ke direktori `.config` dengan perintah:
+
+   ```
+   chmod 664 starship.toml
+   cp starship.toml ~/.config/
+   ```
+
+8. Jalankan file `setup.sh` dengan perintah:
+
+   ```
+   ./setup.sh
+   ```
+
+9. Ikuti instruksi pada layar untuk mengkonfigurasi prompt dan instalasi berbagai alat.
+
+Selamat mencoba!
