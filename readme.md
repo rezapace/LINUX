@@ -251,3 +251,106 @@ sudo apt install /tmp/edge.deb -y
 WSLG memungkinkan pengguna Windows 10 untuk menjalankan aplikasi GUI Linux tanpa perlu memerlukan pengaturan tambahan. Dengan mengikuti langkah-langkah di atas, Anda dapat menginstal WSLG dan paket aplikasi Linux GUI yang diinginkan.
 
 </details>
+
+# Tutorial Instalasi Apache, PHP, MySQL, dan phpMyAdmin pada Ubuntu
+
+Tutorial ini akan memberikan panduan instalasi Apache, PHP, MySQL, dan phpMyAdmin pada sistem operasi Ubuntu.
+
+## Langkah 1: Instalasi Apache
+
+Pertama-tama, buka terminal dan jalankan perintah berikut untuk menginstal Apache:
+
+### menginstall apache2
+
+````bash
+    sudo apt-get install apache2
+    ```
+
+### menginstall libapache2
+```bash
+sudo apt-get install php libapache2-mod-php
+````
+
+### masuk ke directory
+
+```bash
+cd /var/www/html/
+```
+
+### mengubah permission
+
+```bash
+sudo chown thecodeholic:thecodeholic -R ./
+```
+
+### mengubah isi dari envvars
+
+```bash
+sudo gedit /etc/apache2/envvars
+```
+
+### mengubah isi dari envvars di bagian ini
+
+```
+export APACHE_RUN_FILE=www-data
+export APACHE_RUN_GROUP=www-data
+```
+
+### mengubah isi dari envvars di bagian ini menjadi ini
+
+```
+export APACHE_RUN_FILE=thecodeholic
+export APACHE_RUN_GROUP=thecodeholic
+```
+
+## Langkah 2: mysql-server
+
+### Cara Mengatasi Masalah Login MySQL pada Ubuntu
+
+Pada artikel ini, kita akan membahas cara mengatasi masalah login MySQL pada Ubuntu. Masalah ini biasanya terjadi saat kita mencoba untuk login ke MySQL menggunakan akun root, namun gagal karena pesan error authentication.
+
+Untuk mengatasi masalah ini, kita perlu melakukan beberapa langkah berikut:
+
+1. Masuk ke MySQL sebagai root dengan menggunakan perintah berikut:
+
+```bash
+   sudo mysql
+```
+
+2. Setelah masuk ke MySQL, kita perlu mengubah password root dengan menggunakan perintah berikut:
+
+```bash
+   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'p';
+```
+
+Ganti 'p' dengan password yang diinginkan.
+
+3. Setelah itu, keluar dari MySQL dengan menekan tombol ctrl+Z.
+
+4. Selanjutnya, kita perlu menonaktifkan plugin validasi password MySQL dengan menggunakan perintah berikut:
+
+```bash
+    SET GLOBAL validate_password.length = 0;
+    SET GLOBAL validate_password.mixed_case_count = 0;
+    SET GLOBAL validate_password.number_count = 0;
+    SET GLOBAL validate_password.policy = 0;
+    SET GLOBAL validate_password.special_char_count = 0;
+```
+
+Hal ini diperlukan karena plugin validasi password pada MySQL dapat menyebabkan masalah login.
+
+5. selanjutnya akan membuat username dan password yang di gunakan.
+
+```bash
+   create user 'root'@'localhost' identified by 'p';
+```
+
+## Langkah 3: phpmyadmin
+
+1. Masuk ke MySQL sebagai root dengan menggunakan perintah berikut:
+
+```bash
+   sudo apt-get install phpmyadmin
+```
+
+2. klick space (buat milih) arrow key, trus klick yes (spasi) masukan pasword p
