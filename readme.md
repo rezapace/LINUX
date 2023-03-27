@@ -66,6 +66,8 @@ Ini adalah skrip bash yang dapat membantu pengguna Linux untuk mengatur prompt, 
 
 Selamat mencoba!
 
+</details>
+
 #Golang
 
 <details>
