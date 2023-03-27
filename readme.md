@@ -152,3 +152,102 @@ Dengan menambahkan repository ini, Anda akan mendapatkan akses ke lebih banyak p
 Dalam kebanyakan kasus, langkah-langkah di atas dapat membantu Anda memperbaiki masalah saat menginstal program atau perangkat lunak di sistem operasi Ubuntu atau Debian. Jika masalah masih berlanjut, Anda bisa mencari solusi lain atau meminta bantuan pada forum atau komunitas pengguna Linux.
 
 </details>
+
+# WSLG
+
+<details>
+<summary>Instalasi</summary>
+WSLG adalah singkatan dari Windows Subsystem for Linux GUI. Ini adalah fitur baru yang diperkenalkan oleh Microsoft sebagai bagian dari Windows Subsystem for Linux 2 (WSL 2) yang memungkinkan pengguna untuk menjalankan aplikasi GUI Linux di Windows 10 tanpa memerlukan pengaturan tambahan.
+
+## Cara Menginstall WSLG
+
+Untuk menginstall WSLG, Anda perlu memastikan bahwa Anda memiliki Windows 10 dengan versi 21364 ke atas dan menggunakan WSL 2. Kemudian, ikuti langkah-langkah berikut:
+
+1. Buka Windows PowerShell sebagai Administrator dan jalankan perintah berikut:
+
+```
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+
+2. Kemudian, jalankan perintah ini:
+
+```
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+3. Setelah itu, restart komputer Anda.
+
+4. Selanjutnya, unduh paket update kernel Linux terbaru dari [Microsoft Store](https://aka.ms/wsl2kernel). Setelah unduhan selesai, klik dua kali pada paket untuk menginstalnya.
+
+5. Jalankan perintah berikut untuk mengatur WSL 2 sebagai versi default:
+
+```
+wsl --set-default-version 2
+```
+
+6. Terakhir, unduh dan instal aplikasi WSLG dari [Microsoft Store](https://aka.ms/wslg).
+
+## Paket Aplikasi yang Dapat Diinstall pada WSLG
+
+Setelah menginstall WSLG, Anda dapat menginstal paket aplikasi Linux GUI seperti Gedit, GIMP, Nautilus, dan VLC menggunakan perintah apt. Berikut adalah beberapa contoh perintah yang dapat Anda gunakan:
+
+1. Gedit
+
+```
+sudo apt install gedit -y
+```
+
+2. GIMP
+
+```
+sudo apt install gimp -y
+```
+
+3. Nautilus
+
+```
+sudo apt install nautilus -y
+```
+
+4. VLC
+
+```
+sudo apt install vlc -y
+```
+
+5. X11 apps
+
+```
+sudo apt install x11-apps -y
+```
+
+6. Google Chrome
+
+```
+cd /tmp
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt install --fix-broken -y
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+7. Microsoft Teams
+
+```
+cd /tmp
+sudo curl -L -o "./teams.deb" "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=linux&arch=x64&download=true&linuxArchiveType=deb"
+sudo apt install ./teams.deb -y
+```
+
+8. Microsoft Edge Dev Browser
+
+```
+sudo curl https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_101.0.1193.0-1_amd64.deb -o /tmp/edge.deb
+sudo apt install /tmp/edge.deb -y
+```
+
+## Kesimpulan
+
+WSLG memungkinkan pengguna Windows 10 untuk menjalankan aplikasi GUI Linux tanpa perlu memerlukan pengaturan tambahan. Dengan mengikuti langkah-langkah di atas, Anda dapat menginstal WSLG dan paket aplikasi Linux GUI yang diinginkan.
+
+</details>
