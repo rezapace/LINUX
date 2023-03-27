@@ -264,14 +264,15 @@ Pertama-tama, buka terminal dan jalankan perintah berikut untuk menginstal Apach
 
 ### menginstall apache2
 
-````bash
+    ```bash
     sudo apt-get install apache2
     ```
 
 ### menginstall libapache2
+
 ```bash
 sudo apt-get install php libapache2-mod-php
-````
+```
 
 ### masuk ke directory
 
