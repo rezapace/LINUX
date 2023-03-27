@@ -119,3 +119,36 @@ source ~/.bashrc
 Setelah melakukan langkah-langkah di atas, Golang sudah berhasil diinstal pada sistem operasi Linux yang digunakan.
 
 </details>
+
+# Error Install
+
+<details>
+<summary>Fix</summary>
+Jika Anda mengalami masalah saat menginstal program atau perangkat lunak di sistem operasi Ubuntu atau Debian, Anda dapat mencoba beberapa langkah di bawah ini untuk memperbaiki masalah tersebut.
+
+## Langkah 1: Update dan Upgrade
+
+Jalankan perintah berikut untuk memperbarui daftar paket dan mengupgrade paket yang sudah terinstal ke versi terbaru.
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+## Langkah 2: Tambahkan Repository
+
+Jika Anda masih mengalami masalah setelah mengupdate dan mengupgrade sistem Anda, Anda dapat mencoba menambahkan repository utama dan repository universe, restricted, dan multiverse menggunakan perintah berikut.
+
+```bash
+sudo add-apt-repository main
+sudo add-apt-repository universe
+sudo add-apt-repository restricted
+sudo add-apt-repository multiverse
+```
+
+Dengan menambahkan repository ini, Anda akan mendapatkan akses ke lebih banyak paket dan perangkat lunak yang mungkin dibutuhkan oleh sistem Anda.
+
+## Kesimpulan
+
+Dalam kebanyakan kasus, langkah-langkah di atas dapat membantu Anda memperbaiki masalah saat menginstal program atau perangkat lunak di sistem operasi Ubuntu atau Debian. Jika masalah masih berlanjut, Anda bisa mencari solusi lain atau meminta bantuan pada forum atau komunitas pengguna Linux.
+
+</details>
