@@ -1,5 +1,7 @@
 # My Bash
 
+<details>
+<summary>Instalasi</summary>
 Ini adalah skrip bash yang dapat membantu pengguna Linux untuk mengatur prompt, konfigurasi, dan instalasi berbagai alat. Skrip ini menggunakan Starship, yang merupakan prompt yang sangat kustomisasi dan dapat diatur sesuai dengan keinginan pengguna.
 
 ## Persyaratan
@@ -63,6 +65,8 @@ Ini adalah skrip bash yang dapat membantu pengguna Linux untuk mengatur prompt, 
 9. Ikuti instruksi pada layar untuk mengkonfigurasi prompt dan instalasi berbagai alat.
 
 Selamat mencoba!
+
+#Golang
 
 <details>
 <summary>Instalasi Golang</summary>
