@@ -379,3 +379,84 @@ Hal ini diperlukan karena plugin validasi password pada MySQL dapat menyebabkan 
 ```
 
 </details>
+
+# Fish
+
+<details>
+<summary>Instalasi</summary>
+# Setup Fish Programming Language
+
+## Deskripsi
+
+Ini adalah instruksi untuk menginstall dan mengkonfigurasi pemrograman Fish. Ini akan meliputi menginstal Fish, install plugin dan pembaruan file konfigurasi.
+
+## Instruksi
+
+1. Restart
+   ```
+   Source ~/.bashrc
+   ```
+2. Install Fish
+   ```
+   sudo apt-get install fish
+   ```
+3. Install Plugin
+   ```
+   curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+   fisher install jorgebucaran/nvm.fish
+   fisher install ilancosman/tide@v4.1.1
+   fisher install jethrokuan/z
+   wget -c http://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb
+   sudo apt-get install ./exa_0.9.0-4_amd64.deb
+   go install github.com/x-motemen/ghq@latest
+   git clone https://github.com/x-motemen/ghq .
+   fisher install takashabe/fish-peco
+   ```
+4. Pindah ke direktori ghq
+   ```
+   cd ghq
+   ```
+5. Buat file konfigurasi
+   ```
+   touch ~/.config/fish/functions/su.fish
+   touch ~/.config/fish/config.fish
+   touch ~/.config/fish/functions/fish_prompt.fish
+   ```
+6. Set permission
+   ```
+   chmod 700 ~/.config/fish/functions/su.fish
+   chmod 700 ~/.config/fish/config.fish
+   chmod 700 ~/.config/fish/functions/fish_prompt.fish
+   ```
+7. Edit file konfigurasi
+   ```
+   sudo nano ~/.config/fish/functions/fish_prompt.fish
+   ```
+8. Baca file konfigurasi
+   ```
+   ~/.config/fish/config.fish
+   .config/fish/config.fish
+   ```
+9. Hapus semua file yang telah diinstal
+   ```
+   rm -f fish mimedb fish_pager fishd fish_indent
+   rm /usr/local/share/man/man1/fish*.1
+   rm -Rf /usr/local/etc/fish /usr/local/share/fish ~/.config/fish
+   ```
+
+## Sumber Referensi
+
+- sc
+- https://github.com/craftzdog/dotfiles-public
+- https://wiki.archlinux.org/title/fish#Command_completion
+- https://fishshell.com/docs/current/cmds/alias.html
+
+## Ketika memasukkan fish ls
+
+- jorgebucaran/fisher
+- jorgebucaran/nvm.fish
+- ilancosman/tide@v4.1.1
+- jethrokuan/z
+- simnalamburt/shellder
+- takashabe/fish-peco
+</details>
