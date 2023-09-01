@@ -1,3 +1,49 @@
+# install wsl
+
+<details>
+<summary>Instalasi</summary>
+wsl / windows subsistem linux merupakan cara agar bisa menjalanakn linux di windows 
+
+## Persyaratan
+
+- download exe yang ada di atas
+
+## Cara Penggunaan
+
+1. Buka terminal / powershell dengan run administrator
+
+   ```
+   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+   ```
+
+   ```
+   `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
+   ```
+
+   ```
+   Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
+   ```
+
+setelah itu restart laptop dan install file exe nya yang wsl 
+
+kemudian set wsl ke versi 2
+
+   ```
+   wsl --set-default-version 2
+   ```
+
+cara mengecek versi wsl
+
+   ```
+   wsl -l -v
+   ```
+
+
+Selamat mencoba!
+
+</details>
+
+
 # My Bash
 
 <details>
@@ -78,13 +124,13 @@ Berikut adalah langkah-langkah instalasi Golang pada sistem operasi Linux:
 1. Unduh file instalasi Golang dari situs resmi https://golang.org/dl/
 
 ```
-wget https://dl.google.com/go/go1.20.2.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
 ```
 
 2. Ekstrak file instalasi yang sudah diunduh
 
 ```
-sudo tar -xvf go1.20.2.linux-amd64.tar.gz
+sudo tar -xvf go1.21.0.linux-amd64.tar.gz
 ```
 
 3. Pindahkan direktori Golang ke direktori /usr/local
