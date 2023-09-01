@@ -128,6 +128,7 @@ alias g='cd /home/reza/github'
 alias c='clear'
 alias v='code .'
 alias e='explorer .'
+alias z='j'
 
 # Change directory aliases
 alias home='cd ~'
