@@ -13,12 +13,12 @@ mkdir ~/github
 # Langkah 4: Menghapus file .bashrc
 rm ~/.bashrc
 
-# Langkah 5: Clone repository mybash
+# Langkah 5: Clone repository bash
 cd ~/github
-git clone https://github.com/christitustech/mybash
+git clone https://github.com/rezapace/bash
 
-# Langkah 6: Masuk ke direktori mybash dan beri izin eksekusi pada file setup.sh
-cd mybash
+# Langkah 6: Masuk ke direktori bash dan beri izin eksekusi pada file setup.sh
+cd bash
 chmod 775 setup.sh
 
 # Langkah 7: Menyalin file starship.toml ke direktori .config
