@@ -2,6 +2,7 @@
 
 # Langkah 1: Memperbarui sistem
 sudo apt update && sudo apt upgrade -y
+sudo apt install curl -y
 
 # Langkah 2: Membuat direktori .config dan file starship.toml
 mkdir -p ~/.config
