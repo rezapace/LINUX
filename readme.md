@@ -2,6 +2,11 @@
 
 Panduan ini memandu Anda melalui instalasi Windows Subsystem for Linux (WSL) untuk mengaktifkan lingkungan Linux di Windows. Dengan langkah-langkah yang jelas, Anda akan menginstal Bash, Golang, dan menangani kesalahan instalasi. Selain itu, panduan ini memberikan solusi untuk mendukung antarmuka grafis (WSLG), serta instruksi instalasi Apache, PHP, MySQL, dan phpMyAdmin untuk memulai pengembangan web dengan mudah. Dengan WSL, Anda dapat menikmati kenyamanan pengembangan Linux langsung di sistem operasi Windows Anda. Selamat menjelajahi dunia Linux tanpa meninggalkan lingkungan Windows Anda! 🚀🐧
 
+## install wsl 1 setup
+   ```
+   irm "https://github.com/rezapace/LINUX/raw/main/wsl.ps1" | iex
+   ```
+
 # install wsl
 
 <details>
