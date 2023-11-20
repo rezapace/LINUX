@@ -4,7 +4,7 @@ Panduan ini memandu Anda melalui instalasi Windows Subsystem for Linux (WSL) unt
 
 ## install wsl 1 setup
    ```powershell
-   irm "https://github.com/rezapace/LINUX/raw/main/wsl.ps1" | iex
+   irm "https://github.com/rezapace/ps/raw/main/wsl.ps1" | iex
    ```
 
 # install wsl
