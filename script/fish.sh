@@ -1,14 +1,10 @@
 #!/bin/bash
 
 # Pastikan script dijalankan sebagai root
-if [ "$EUID" -ne 0 ]
-  then echo "Silakan jalankan sebagai root"
-  exit
-fi
 
 # Install Fish Shell
 sudo apt install curl -y
-apt-get install fish -y
+sudo apt-get install fish -y
 
 # Pindah ke direktori ghq dan buat file konfigurasi
 mkdir -p ~/.config/fish
