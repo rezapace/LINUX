@@ -34,7 +34,16 @@ fish -c "sudo apt install peco"
 fish -c "sudo apt install fzf"
 fish -c "sudo apt install trash-cli"
 
+
+
 echo "Script selesai dijalankan."
+
+# tambahan untuk tema
+# git clone https://github.com/oh-my-fish/oh-my-fish
+# cd oh-my-fish
+# bin/install --offline
+# fish -c "omf install bobthefish"
+
 
 # sudo apt install curl
 # fish -c "sudo snap install --classic code"
