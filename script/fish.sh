@@ -12,7 +12,7 @@ apt-get install fish -y
 
 # Pindah ke direktori ghq dan buat file konfigurasi
 mkdir -p ~/.config/fish
-cp /home/r/github/LINUX/script/config.fish ~/.config/fish/config.fish
+cp -r /home/r/github/LINUX/script/config.fish/* ~/.config/fish/
 touch ~/.config/fish/functions/su.fish
 touch ~/.config/fish/functions/fish_prompt.fish
 
