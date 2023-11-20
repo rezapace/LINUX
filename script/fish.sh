@@ -7,9 +7,9 @@ sudo apt install curl -y
 sudo apt-get install fish -y
 
 # Pindah ke direktori ghq dan buat file konfigurasi
-mkdir -p ~/.config/fish
-touch ~/.config/fish/functions/su.fish
-touch ~/.config/fish/functions/fish_prompt.fish
+mkdir -p "$HOME/.config/fish"
+touch "$HOME/.config/fish/functions/su.fish"
+touch "$HOME/.config/fish/functions/fish_prompt.fish"
 
 # Set permission
 chmod 700 ~/.config/fish/functions/su.fish
@@ -29,7 +29,7 @@ fish -c "sudo apt install peco"
 fish -c "sudo apt install fzf"
 fish -c "sudo apt install trash-cli"
 
-cp -i /home/r/github/LINUX/fish/config.fish ~/.config/fish/
+cp -i "$HOME/github/LINUX/fish/config.fish" "$HOME/.config/fish/"
 
 echo "Script selesai dijalankan."
 
