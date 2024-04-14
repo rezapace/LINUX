@@ -395,6 +395,11 @@ Ganti 'p' dengan password yang diinginkan.
     SET GLOBAL validate_password.special_char_count = 0;
 ```
 
+```bash
+   CEK KEADAAN PASSWORD REQUIRMENT
+   SHOW VARIABLES LIKE 'validate_password%';
+```
+
 Hal ini diperlukan karena plugin validasi password pada MySQL dapat menyebabkan masalah login.
 
 5. selanjutnya akan membuat username dan password yang di gunakan.
