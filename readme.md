@@ -433,6 +433,12 @@ Hal ini diperlukan karena plugin validasi password pada MySQL dapat menyebabkan 
     sudo service mysql restart
 ```
 
+### Jika terjadi error
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'p';
+sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+``` 
+
 </details>
 
 # Fish
